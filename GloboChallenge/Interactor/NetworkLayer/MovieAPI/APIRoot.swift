@@ -6,4 +6,16 @@
 //  Copyright © 2020 Rodrigo Bukowitz. All rights reserved.
 //
 
-import Foundation
+/// representes what the API return to the application
+struct APIRoot: Codable {
+    var results: [Movie]
+}
+
+/// extension to represent all coding keys
+extension APIRoot {
+    enum CodingKeys: String, CodingKey {
+        case results = "results"
+    }
+}
+
+

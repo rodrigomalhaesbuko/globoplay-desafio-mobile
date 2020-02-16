@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6FDF2AA6550147D3D28A39EC /* Pods_GloboChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CAC1A74BADBA6B28D863954 /* Pods_GloboChallengeTests.framework */; };
 		7639D94E02D98B4470F44B81 /* Pods_GloboChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACEF09BB011D910FEDC34E6 /* Pods_GloboChallenge.framework */; };
+		D554AD4123F9D7C2004CBB36 /* MovieDBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D554AD4023F9D7C2004CBB36 /* MovieDBAPI.swift */; };
+		D554AD4323F9D901004CBB36 /* GloboChallengeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D554AD4223F9D901004CBB36 /* GloboChallengeAPI.swift */; };
 		D58D240723F9CFCB003B6C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D240623F9CFCB003B6C69 /* AppDelegate.swift */; };
 		D58D240923F9CFCB003B6C69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D240823F9CFCB003B6C69 /* SceneDelegate.swift */; };
 		D58D240B23F9CFCB003B6C69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D240A23F9CFCB003B6C69 /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 		9BDD9230EBCF8FACF2EB4FBF /* Pods-GloboChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GloboChallenge.debug.xcconfig"; path = "Target Support Files/Pods-GloboChallenge/Pods-GloboChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		AACEF09BB011D910FEDC34E6 /* Pods_GloboChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GloboChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6760908E49B9C49FCD82B01 /* Pods-GloboChallenge-GloboChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GloboChallenge-GloboChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-GloboChallenge-GloboChallengeUITests/Pods-GloboChallenge-GloboChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D554AD4023F9D7C2004CBB36 /* MovieDBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBAPI.swift; sourceTree = "<group>"; };
+		D554AD4223F9D901004CBB36 /* GloboChallengeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloboChallengeAPI.swift; sourceTree = "<group>"; };
 		D58D240323F9CFCB003B6C69 /* GloboChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GloboChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58D240623F9CFCB003B6C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D58D240823F9CFCB003B6C69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +127,6 @@
 				56E4B7E85FBD901971CCEB13 /* Pods-GloboChallengeTests.debug.xcconfig */,
 				18534DB6D85A57FC0E0B572F /* Pods-GloboChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -255,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				D58D244923F9D2A2003B6C69 /* APIRoot.swift */,
+				D554AD4023F9D7C2004CBB36 /* MovieDBAPI.swift */,
+				D554AD4223F9D901004CBB36 /* GloboChallengeAPI.swift */,
 			);
 			path = MovieAPI;
 			sourceTree = "<group>";
@@ -505,6 +510,8 @@
 				D58D243E23F9D12C003B6C69 /* BaseInteractor.swift in Sources */,
 				D58D244723F9D22B003B6C69 /* NetworkManager.swift in Sources */,
 				D58D244423F9D186003B6C69 /* MoviesWireframe.swift in Sources */,
+				D554AD4323F9D901004CBB36 /* GloboChallengeAPI.swift in Sources */,
+				D554AD4123F9D7C2004CBB36 /* MovieDBAPI.swift in Sources */,
 				D58D240723F9CFCB003B6C69 /* AppDelegate.swift in Sources */,
 				D58D240923F9CFCB003B6C69 /* SceneDelegate.swift in Sources */,
 			);
@@ -681,6 +688,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QJCLMUR75;
 				INFOPLIST_FILE = GloboChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -699,6 +707,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QJCLMUR75;
 				INFOPLIST_FILE = GloboChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
