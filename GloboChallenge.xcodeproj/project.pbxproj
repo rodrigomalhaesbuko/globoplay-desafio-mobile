@@ -11,6 +11,9 @@
 		7639D94E02D98B4470F44B81 /* Pods_GloboChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACEF09BB011D910FEDC34E6 /* Pods_GloboChallenge.framework */; };
 		D554AD4123F9D7C2004CBB36 /* MovieDBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D554AD4023F9D7C2004CBB36 /* MovieDBAPI.swift */; };
 		D554AD4323F9D901004CBB36 /* GloboChallengeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D554AD4223F9D901004CBB36 /* GloboChallengeAPI.swift */; };
+		D554AD4623F9F860004CBB36 /* MainMovieTableViewDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D554AD4523F9F860004CBB36 /* MainMovieTableViewDS.swift */; };
+		D554AD4A23F9F8F1004CBB36 /* MovieSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D554AD4923F9F8F1004CBB36 /* MovieSection.swift */; };
+		D554AD4C23F9FA77004CBB36 /* MainMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D554AD4B23F9FA77004CBB36 /* MainMovieTableViewCell.swift */; };
 		D58D240723F9CFCB003B6C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D240623F9CFCB003B6C69 /* AppDelegate.swift */; };
 		D58D240923F9CFCB003B6C69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D240823F9CFCB003B6C69 /* SceneDelegate.swift */; };
 		D58D240B23F9CFCB003B6C69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D240A23F9CFCB003B6C69 /* ViewController.swift */; };
@@ -56,6 +59,9 @@
 		C6760908E49B9C49FCD82B01 /* Pods-GloboChallenge-GloboChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GloboChallenge-GloboChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-GloboChallenge-GloboChallengeUITests/Pods-GloboChallenge-GloboChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D554AD4023F9D7C2004CBB36 /* MovieDBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBAPI.swift; sourceTree = "<group>"; };
 		D554AD4223F9D901004CBB36 /* GloboChallengeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloboChallengeAPI.swift; sourceTree = "<group>"; };
+		D554AD4523F9F860004CBB36 /* MainMovieTableViewDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMovieTableViewDS.swift; sourceTree = "<group>"; };
+		D554AD4923F9F8F1004CBB36 /* MovieSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSection.swift; sourceTree = "<group>"; };
+		D554AD4B23F9FA77004CBB36 /* MainMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMovieTableViewCell.swift; sourceTree = "<group>"; };
 		D58D240323F9CFCB003B6C69 /* GloboChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GloboChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58D240623F9CFCB003B6C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D58D240823F9CFCB003B6C69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +136,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D554AD4423F9F839004CBB36 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				D554AD4523F9F860004CBB36 /* MainMovieTableViewDS.swift */,
+				D554AD4923F9F8F1004CBB36 /* MovieSection.swift */,
+				D554AD4B23F9FA77004CBB36 /* MainMovieTableViewCell.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 		D58D23FA23F9CFCB003B6C69 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +213,7 @@
 		D58D243723F9D016003B6C69 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D554AD4423F9F839004CBB36 /* DataSources */,
 				D58D240A23F9CFCB003B6C69 /* ViewController.swift */,
 			);
 			path = View;
@@ -503,15 +520,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D554AD4623F9F860004CBB36 /* MainMovieTableViewDS.swift in Sources */,
 				D58D244A23F9D2A2003B6C69 /* APIRoot.swift in Sources */,
 				D58D240B23F9CFCB003B6C69 /* ViewController.swift in Sources */,
 				D58D244023F9D142003B6C69 /* BasePresenter.swift in Sources */,
 				D58D244223F9D14B003B6C69 /* Movie.swift in Sources */,
 				D58D243E23F9D12C003B6C69 /* BaseInteractor.swift in Sources */,
+				D554AD4A23F9F8F1004CBB36 /* MovieSection.swift in Sources */,
 				D58D244723F9D22B003B6C69 /* NetworkManager.swift in Sources */,
 				D58D244423F9D186003B6C69 /* MoviesWireframe.swift in Sources */,
 				D554AD4323F9D901004CBB36 /* GloboChallengeAPI.swift in Sources */,
 				D554AD4123F9D7C2004CBB36 /* MovieDBAPI.swift in Sources */,
+				D554AD4C23F9FA77004CBB36 /* MainMovieTableViewCell.swift in Sources */,
 				D58D240723F9CFCB003B6C69 /* AppDelegate.swift in Sources */,
 				D58D240923F9CFCB003B6C69 /* SceneDelegate.swift in Sources */,
 			);

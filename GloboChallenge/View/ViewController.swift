@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .blue
+        self.view.backgroundColor = .darkGray
         // Do any additional setup after loading the view.
         
         /* TEST */

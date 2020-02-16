@@ -14,6 +14,7 @@ import Moya
 enum MovieDBAPI {
     static let apiKey = "9380a8400a43b80a4276176654c05ab6"
     case topMovies(genre: Int)
+    case myList(id: Int)
 }
 
 /// This extension describes all the info for the Target Type , in order to use Moya
@@ -26,12 +27,13 @@ extension MovieDBAPI: TargetType {
     var path: String {
         switch self {
         case .topMovies: return "discover/movie"
+        case .myList(let id): return "list/\(id)"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .topMovies: return .get
+        case .topMovies, .myList: return .get
         }
     }
     
@@ -48,6 +50,8 @@ extension MovieDBAPI: TargetType {
             if(genre != 0){
                  params["with_genres"] = genre
             }
+        case .myList:
+            params["api_key"] = MovieDBAPI.apiKey
         }
         return params
     }
@@ -58,7 +62,7 @@ extension MovieDBAPI: TargetType {
     
     var task: Task {
         switch self {
-        case .topMovies:
+        case .topMovies, .myList:
             if let parameters = parameters {
                 return .requestParameters(
                     parameters: parameters,
